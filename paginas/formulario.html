@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+        
+            <section class="menu_arriba">
+                <!--<h1 class="menu_logo2">The Makeup Legion</h1>-->
+                <a class="pagina_img" href="../index.html"><img class="menu_logo2" src="../imagenes/logo_nav.png" alt=""></a>
+                <li><a href="../paginas/formulario.html"><img src="../assets/user.svg" alt=""></a></li>
+                <li><a href="../paginas/carrito.html"><img src="../assets/shopping.svg" alt=""></a></li>
+                <li><img src="../assets/heart.svg" alt=""></li>
+                <li><img src="../assets/search.svg" alt=""></li>
+            </section>
+            <section class="menu_container">
+                <h1 class="menu_logo">The Makeup Legion</h1>
+    
+                <ul class="menu_links">
+                    <li class="menu_item">
+                        <a href="#" class="menu_link">CUIDADO DE PIEL</a>
+                    </li>
+        
+                    <li class="menu_item  menu_item--show">
+                        <a href="#" class="menu_link">CUIDADO CAPILAR<img src="../assets/arrow.svg" class="menu_arrow"></a>
+                    
+                        <ul class="menu_nesting">
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside"> Cepillos para cabello</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside"> Accesorios para cabello</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside"> Glitter para cabello</a>
+                            </li>
+        
+                        </ul>
+                    </li>
+                    <li class="menu_item  menu_item--show">
+                        <a href="#" class="menu_link">BROCHAS<img src="../assets/arrow.svg" class="menu_arrow"></a>
+                    
+                        <ul class="menu_nesting">
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside"> Kit de brochas</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside"> Esponjas</a>
+                            </li>
+                        </ul>
+                    </li>
+        
+                    <li class="menu_item  menu_item--show" >
+                        <a href="#" class="menu_link">MAQUILLAJE<img src="../assets/arrow.svg" class="menu_arrow"></a>
+                    
+                        <ul class="menu_nesting">
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside"> Bases</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside"> Cejas</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside"> Delineadores</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside"> Macara de pestañas</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside"> Pestañas y pegamento para petañas</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside"> Sombras</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu_item  menu_item--show" >
+                        <a href="#" class="menu_link">MARCAS<img src="../assets/arrow.svg" class="menu_arrow"></a>
+                    
+                        <ul class="menu_nesting">
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside">Maybelline</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside">Loreal Paris</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside"> Amor Us</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside"> Beauty Creations</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside"> Dolce Bella</a>
+                            </li>
+                            <li class="menu_inside">
+                                <a href="#" class="menu_link menu_link--inside"> Rude Cosmetics</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu_item">
+                        <a href="#" class="menu_link">DESCUENTOS</a>
+                    </li>
+        
+                </ul>
+                <div class="menu_hamburguer">
+                    <img src="../assets/menu.svg" class="menu_img">
+                </div>
+            </section>
+        </nav>
+    </header>
+    <main>
+        
+        <section class="formulario_1">
+            <img class="imagen_formulario" src="../imagenes/formulario.jpg" alt="">
+                <section class="formulario">
+                    <p class="titulo_formulario">Mi Cuenta</p>
+                    <button class="registrar">¿No tienes cuenta?<a href="#">Registrate Acá</a></button><br>
+                    <input type="email" class="form_cuenta" placeholder="Email"><br>
+                    <input type="password" class="form_cuenta" placeholder="Contraseña"><br>
+                    <input type="submit" class="ingresar" value="Ingresar"><br>
+                    <a class="contraseña" href="#">¿Olvidaste tu Contraseña?</a>
+            
+            </section>
+            
+        </section>
+        <section class="crear_cuenta">
+            <div class="modal_container">
+                <p class="titulo_registrarse">Registrarse</p>
+                <form>
+                    <ul>
+                      <li>
+                        <label for="name">Nombre:</label><br>
+                        <input type="text" class="registrarse_input">
+                      </li>
+                      <li>
+                        <label for="mail">Correo electrónico:</label><br>
+                        <input type="email" class="registrarse_input">
+                      </li>
+                      <li>
+                        <label for="msg">Celular</label><br>
+                        <input type="number" class="registrarse_input">
+                      </li>
+                      <li>
+                        <label for="msg">Departamento de Residencia</label><br>
+                        <select name="transporte">
+                            <option>Boyacá</option>
+                            <option>Caldas</option>
+                            <option>Cesar</option>
+                            <option>Cundinamarca</option>
+                            <option>Huila</option>
+                            <option>Nariño</option>
+                            <option>Putumayo</option>
+                            <option>Tolima</option>
+                            <option>Santander</option>
+                        </select>
+                      </li>
+                      <li>
+                        <label for="msg">Dirección de Residencia</label><br>
+                        <input type="text" class="registrarse_input"></input>
+                      </li>
+                      <li>
+                        <label for="msg">Crea una contraseña</label><br>
+                        <input type="password" class="registrarse_input"></input>
+                      </li>
+                      <input type="submit" class="enviar" value="Enviar">
+                      
+                    </ul>
+                  </form>
+                  <a href="#" class="modal_close"><img src="../assets/close.svg" alt=""></a>
+            </div>
+        </section> 
+    </main>
+    <footer>
+        <section class="final">
+            <section class="final_1">
+                <p>NUESTRA MARCA</p>
+                <P>Quiénes Somos</P>
+                <p>Misión</p>
+                <p>Visión</p>
+            </section>
+            <section class="final_2">
+                <P>TÉRMINOS Y CONDICIONES</P>
+                <P>Términos y Condiciones</P>
+                <p>Entregas</p>
+                <p>Solicitud Crédito</p>
+            </section>
+        </section>
+        <section class="final_2">
+            <p>Contacto</p>
+            <p>Email: themakeuplegion@gmail.com</p>
+            <p>Siguenos en nuestras redes <img src="assets/instagram.svg" alt=""> <img src="assets/tiktok.svg" alt=""> <img src="assets/facebook.svg" alt=""></p>
+        </section>
+        
+    </footer>
+    <script src="../javascript/formulario.js"></script>
+</body>
+</html>

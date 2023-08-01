@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    position: sticky;
+    top: 0px;
+}
+p{
+    padding: 0;
+    margin: 0;
+}
+.menu{
+    background-color: black;
+    color: white;
+    height: auto;
+}
+.menu_logo{
+    display: none;
+}
+.menu_logo2{
+    width: 300px;
+    height: 100px;
+    padding-left: 80px;
+}
+.menu_arriba{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 50% 12.5% 12.5% 12.5% 12.5% ;
+    background-color: black;
+}
+.menu_arriba li{
+    padding: 10px 50px 20px;
+}
+.modo_oscuro{
+    background-color: black;
+    color: white;
+}
+.menu_container{
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    max-width: 1200px;
+    padding-bottom: 15px;
+}
+
+.menu_links{
+    height: 100%;
+    transition: tramsform .5s;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bolder;
+    width: 100%;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+.menu_item{
+    list-style: none;
+    position: relative;
+    height: 100%;
+    --clip: polygon(0 0, 100% 0, 100% 0, 0 0);/*Esconder el elemento*/
+    --transform: rotate(-90deg);
+}
+
+.menu_item:hover{
+    --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%); /*Mostrar el elemento*/
+    --transform: rotate(0);
+}
+
+.menu_link{
+    color: white;
+    text-decoration: none;
+    padding: 0 30px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+}
+.menu_link:hover{
+    background-color: #FAB9BF;
+}
+
+.menu_nesting{
+    clip-path: var(--clip);
+    list-style: none;
+    transition: clip-path .3s;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: max-content;
+    transform: translateY(100%);
+    background-color: black;
+}
+
+.menu_arrow{
+    transform: var(--transform);
+    transition: transform -3s;
+    display: block;
+    margin-left: 3px;
+}
+
+.menu_link--inside{
+    padding: 30px 100px 30px 20px;
+}
+
+.menu_link--inside:hover{
+    background-color: #FAB9BF;
+}
+
+.menu_hamburguer{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    cursor: pointer;
+    display: none;
+}
+
+.menu_img{
+    display: block;
+    width: 36px;
+}
+.favorito_boton{
+    border: none;
+    background: none;
+    margin-top: px;
+}
+.agregar{
+    padding-top: 6px;
+    background-color: #FAB9BF;
+    width: 60%;
+    border-radius: 50PX;
+}
+.principal{
+    width: 100%; 
+}
+.recien_llegados{
+    
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+}
+.recien_llegados li{
+    /*padding-left: 20px;*/
+    cursor: pointer;
+}
+
+
+.productos_img{
+    width: 80%;
+    height: 70%;
+}
+.titulo_recien{
+    padding-top: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    /*font-weight: bolder;*/
+    font-size: 20px;
+}
+.marca{
+    color: gray;
+    font-size: 15px;
+}
+.nombre{
+    font-weight: bold;
+}
+.precio{
+    padding-top: 5px;
+    color: #FB3375;
+}
+.muro{
+    list-style: none;
+    display: grid;
+    width: 100%;
+    height: 500px;
+    grid-template-columns: 50% 25% 25%;
+    grid-template-rows: 50% 50%;
+    background-color: black;
+    margin-top: 40px;
+}
+.muro1{
+    padding: 20px 20px 20px 20px;
+    grid-column: 2/3;
+    grid-row: 2;
+    width: 180%
+}
+
+.muro2{
+    padding: 20px 20px 20px 20px;
+    grid-column: 1;
+    grid-row: 1/2;
+    width: 90%;
+    height: 180%;
+}
+
+.muro3{
+    padding: 20px 20px 20px 20px;
+    grid-column: 2;
+    grid-row: 1;
+    width: 90%;
+    height: 90%;
+}
+
+.muro4{
+    padding: 20px 20px 20px 20px;
+    grid-column: 3;
+    grid-row: 1;
+    width: 80%;
+    height: 90%;
+}
+
+.final{
+    margin-top: 30px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+.final_2{
+    color: white;
+    background-color: black;
+    padding-bottom: 20px;
+    text-align: center;
+}
+/*------------------ formulario --------------- */
+.formulario_1{
+    display: flex;
+    flex-direction: row;
+}
+.imagen_formulario{
+    padding: 20px 20px 20px 110px;
+    width: 50%;
+    height: 500px;
+}
+.formulario{
+    width: 30%;
+    background-color: #E5D6ED;
+    margin-top: 20px;
+    padding-top: 50px;
+    text-align: center;
+}
+.titulo_formulario{
+    font-size: 30px;
+    padding-bottom: 15px;
+    color: white;
+    background-color: #9B61A5;
+}
+.registrar{
+    margin-top: 15px;
+    height: 30px;
+    width: 60%;
+    margin-bottom: 20px;
+}
+.form_cuenta{
+    margin: 3px;
+    width: 70%;
+    height: 6%;
+}
+.ingresar{
+    margin-top: 15px;
+    width: 40%;
+    height: 7%;
+    background-color: #9B61A5;
+    margin-bottom: 15px;
+}
+.contraseña{
+    color: gray;
+}
+.crear_cuenta{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s;
+}
+.crear_cuenta--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+}
+.modal_container{
+    width: 90%;
+    background-color: white;
+    max-width: 600px;
+    max-height: 90%;
+    margin: auto;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+}
+.modal_container li{
+    list-style: none;
+    padding: 8px;
+}
+.registrarse_input{
+    border-style: outset;
+    width: 100%;
+}
+.enviar{
+    margin-top: 15px;
+    margin-left: 40px;
+    width: 60%;
+    height: 40px;
+    background-color: #9B61A5;
+}
+.titulo_registrarse{
+    font-size: 20px;
+    font-weight: bold;
+}
+/*------------------- Carrito de Compras -------------*/
+.titulo_compras{
+    padding: 40px 20px 20px 50px;
+    font-size: 20px;
+    background-color: #FAB9BF;
+}
+.compras{
+    width: 100%;
+    text-align: center;
+}
+.carrito_compras{
+    width: 20%;
+
+}
+@media (max-width:800px){
+    .pagina_img{
+        display: none;
+    }
+    .menu_hamburguer{
+        display: flex;
+        margin-right: 15px;
+    }
+    .menu_logo2{
+        display: none;
+    }
+    .menu_logo{
+        display: flex;
+    }
+    .menu_item{
+        --clip:0;
+        overflow: hidden;
+    }
+    .menu_item--active{
+        --transform: rotate(0);
+        background-color: #FAB9BF;
+    }
+    .menu_item--show{
+        background-color: var(--background);
+    }
+    .menu_container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu_links{
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 120px;
+        bottom: 0;
+        right: 0;
+        background-color: black;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translateX(100%);
+    }
+    .menu_links--show{
+        transform: unset;
+        width: 100%;
+    }
+
+    .menu_link{
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+    .menu_arrow{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+    .menu_nesting{
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+    }
+    .menu_link--inside{
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid #FAB9BF;
+    }
+
+    .menu_arriba{
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+    .recien_llegados{
+        padding: 2px;
+        list-style: none;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+        
+    }
+    .recien_llegados li{
+        padding: 20px;
+        margin-top: 15px;
+    }
+    .agregar{
+        padding-top: 6px;
+        padding-bottom: 6px;
+        background-color: #FAB9BF;
+        width: 70%;
+        border-radius: 50PX;
+        font-size: 60%;
+    }
+    .muro{
+        list-style: none;
+        display: grid;
+        width: 100%;
+        height: auto;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 40% 30% 30%;
+        background-color: black;
+        margin-top: 40px;
+    }
+    .muro1{
+        grid-row: 3;
+        grid-column: 1/2;
+    }
+    .muro2{
+        padding-left: 60px;
+        grid-row: 1;
+        grid-column: 1/2;
+        width: 150%;
+        height: 90%
+    }
+    .muro3{
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .muro4{
+        grid-row: 2;
+        grid-column: 2;
+    }
+    /*-------------Formulario-----------------*/
+    .imagen_formulario{
+        padding: 20px 10px 20px 20px;
+        width: 50%;
+        height: 500px;
+    }
+    .formulario{
+        width: 50%;
+        background-color: #E5D6ED;
+        margin-top: 20px;
+        padding-top: 50px;
+        text-align: center;
+    }
+}
